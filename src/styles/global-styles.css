@@ -1,0 +1,141 @@
+:root {
+  --primary-orange: #FA5A25;
+  --header-bg: #FFFFFF;
+  --body-bg: #F7F5F4;
+  --secondary-bg: #D1C5B7;
+  --card-bg: #FFFFFF;
+  --main-text: #2B3037;
+  --username-text: #6D758D;
+  --btn-text: #6D758D;
+  --comment-text: #4E566D;
+  --footer-bg: #373737;
+}
+
+/* Base typography styles */
+body {
+  background-color: var(--body-bg);
+  font-family: DINPro, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text);
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2B3037;
+  margin: 0;
+  }
+
+p {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile typography */
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #2B3037;
+  margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Small screens (up to 767px) */
+@media (max-width: 767px) {
+
+}
+
+/* Medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra-large screens (1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+

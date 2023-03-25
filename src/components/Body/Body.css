@@ -1,0 +1,156 @@
+@import url("../../styles/global-styles.css");
+
+
+.container {
+  display: flex;
+}
+
+.header {
+  margin: 35px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  background-color: var(--card-bg);
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .top {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card .middle {
+  font-size: 18px;
+}
+
+.card .bottom {
+  font-size: 14px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  width: 128px;
+  height: 43px;
+  border: 1px solid #6D758D;
+  border-radius: 999px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+} */
+
+.view-post-button {
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 10px 24px 10px 24px;
+  background-color: transparent;
+  border-color: var(--btn-text);
+}
+
+
+@media (max-width: 767px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    margin: 35px;
+    margin-left: 55px;
+  }
+  
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    width: 80%;
+    height: 200px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+  }
+  .card {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    max-width: 992px;
+  }
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    max-width: 1200px;
+
+  }
+  .card {
+    width: calc(25% - 20px);
+    margin: 10px;
+  }
+}
