@@ -67,6 +67,42 @@ a:hover {
   text-decoration: underline;
 }
 
+.global-button {
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 10px 24px 10px 24px;
+  background-color: transparent;
+  border-color: var(--btn-text);
+}
+
+@media (max-width: 320px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    /* align-items: center; */
+    background-color: darkolivegreen;
+  }
+
+  .global-button {
+    padding: 8px;
+  }
+
+  .card {
+    height: auto;
+    align-items: center;
+    min-width: 230px;
+}
+
+.top-row {
+  max-height: none;
+}
+
+.bottom-row {
+  flex-direction: column;
+}
+}
 
 /* Mobile typography */
 @media (min-width: 320px) and (max-width: 767px) {
