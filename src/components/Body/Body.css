@@ -1,12 +1,26 @@
 @import url("../../styles/global-styles.css");
 
-
 .container {
   display: flex;
 }
 
+.avatar-container {
+  display: flex;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+  margin-top: -80px;
+  z-index: 1;
+}
+
 .header {
-  margin: 35px;
+  display: flex;
+  flex-direction: column;
+  margin: 35px 35px 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .grid-container {
@@ -83,7 +97,7 @@
   }
 
   .header {
-    margin: 35px;
+    /* margin: 35px; */
     margin-left: 55px;
   }
   
@@ -98,6 +112,7 @@
     width: 80%;
     height: 200px;
     margin: 10px;
+    border-radius: 20px;
   }
 }
 
@@ -105,6 +120,9 @@
   .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    /* align-items: center; */
   }
 
   .grid-container {
@@ -115,6 +133,7 @@
   .card {
     width: calc(50% - 20px);
     margin: 10px;
+    border-radius: 20px;
   }
 }
 
@@ -122,6 +141,9 @@
   .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
 
   .grid-container {
@@ -133,6 +155,7 @@
   .card {
     width: calc(33.33% - 20px);
     margin: 10px;
+    border-radius: 20px;
   }
 }
 
@@ -141,16 +164,19 @@
   .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
   .grid-container {
     justify-content: space-between;
     align-items: center;
     margin: 25px;
     max-width: 1200px;
-
   }
   .card {
     width: calc(25% - 20px);
     margin: 10px;
+    border-radius: 20px;
   }
 }

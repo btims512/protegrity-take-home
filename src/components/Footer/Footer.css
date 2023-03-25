@@ -1,0 +1,16 @@
+@import url("../../styles/global-styles.css");
+
+.footer-container {
+  height: 250px;
+  background-color: var(--footer-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
