@@ -55,6 +55,7 @@ p {
   margin-bottom: 1rem;
   font-style: normal;
   font-weight: 400;
+  margin-top: 0;
 }
 
 a {
@@ -76,13 +77,17 @@ a:hover {
 }
 
 @media (max-width: 320px) {
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
   .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    /* align-items: center; */
-    background-color: darkolivegreen;
   }
 
   .global-button {
@@ -120,9 +125,10 @@ a:hover {
   }
   
   h3 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 0.5rem;
+    font-weight: 600;
   }
 
   h4 {
