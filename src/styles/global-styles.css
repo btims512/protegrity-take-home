@@ -75,6 +75,10 @@ a:hover {
   border-color: var(--btn-text);
 }
 
+.global-button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 320px) {
 
   h3 {
@@ -91,6 +95,13 @@ a:hover {
 
   .global-button {
     padding: 8px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 
   .card {
