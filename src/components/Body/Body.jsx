@@ -10,7 +10,7 @@ const Body = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://www.reddit.com/r/data.json?count=${(currentPage - 1) * 12}&limit=144`)
+    fetch(`https://www.reddit.com/r/data.json?count=${(currentPage - 1) * 12}&limit=96`)
       .then((response) => response.json())
       .then((data) => {
         setPosts(data.data.children
@@ -22,7 +22,7 @@ const Body = () => {
             url: post.data.url
           }))
         );
-        setIsLoading(false);
+        setIsLoading(true);
       });
   }, [currentPage]);
 
@@ -39,8 +39,8 @@ const Body = () => {
   };
 
   const truncateTitle = (title) => {
-    if (title.length > 140) {
-      return title.slice(0, 140) + '...';
+    if (title.length > 120) {
+      return title.slice(0, 120) + '...';
     } else {
       return title;
     }
@@ -61,8 +61,11 @@ const Body = () => {
       <div className="flex-container">
         <div className="grid-container">
           {isLoading ? (
+            <div>
+
             <div className="loading">
             <img src={Spinner} alt="loading..." />
+            </div>
             </div>
           ) : (
             posts.map((post, index) => (
@@ -84,7 +87,7 @@ const Body = () => {
 
         <div className="button-container">
           <button className="global-button" onClick={handlePrevClick}><h4>Prev</h4></button>
-          <h4>{currentPage} - {Math.min(currentPage+11, 9)}</h4>
+          <h4>Page {currentPage} of {Math.min(currentPage+11, 8)}</h4>
           <button className="global-button" onClick={handleNextClick}><h4>Next</h4></button>
         </div>
       </div>
