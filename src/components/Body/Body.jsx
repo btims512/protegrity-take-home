@@ -22,7 +22,7 @@ const Body = () => {
             url: post.data.url
           }))
         );
-        setIsLoading(true);
+        setIsLoading(false);
       });
   }, [currentPage]);
 
