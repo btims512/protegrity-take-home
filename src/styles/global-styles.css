@@ -1,23 +1,23 @@
 :root {
-  --primary-orange: #FA5A25;
-  --header-bg: #FFFFFF;
-  --body-bg: #F7F5F4;
+  --primary-brand: #FA5A25;
+  --background: #FFFFFF;
+  --background-alt: #F7F5F4;
+  --foreground: #2B3037;
+  --foreground-alt: #4E566D;
+  --foreground-alt2: #6D758D;
   --secondary-bg: #D1C5B7;
-  --card-bg: #FFFFFF;
-  --main-text: #2B3037;
   --username-text: #6D758D;
-  --btn-text: #6D758D;
-  --comment-text: #4E566D;
-  --footer-bg: #373737;
+  --static-dark: #373737;
+  --static-white: #FFFFFF;
 }
 
 /* Base typography styles */
 body {
-  background-color: var(--body-bg);
+  background-color: var(--background-alt);
   font-family: DINPro, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--main-text);
+  color: var(--foreground);
   margin: 0;
 }
 
@@ -72,7 +72,7 @@ a:hover {
   border-radius: 100px;
   padding: 10px 24px 10px 24px;
   background-color: transparent;
-  border-color: var(--btn-text);
+  border-color: var(--foreground-alt2);
 }
 
 .global-button:hover {

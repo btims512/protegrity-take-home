@@ -2,7 +2,7 @@
 
 .footer-container {
   height: 250px;
-  background-color: var(--footer-bg);
+  background-color: var(--static-dark);
   display: flex;
   justify-content: center;
   align-items: center;
