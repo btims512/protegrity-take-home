@@ -1,4 +1,4 @@
-# r/data Page
+# r/data Posts Collection
 
 This is a React web application that displays a collection of posts from the r/data subreddit. It includes pagination and displays different card layouts for desktop and mobile devices.
 
