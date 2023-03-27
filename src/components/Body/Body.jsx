@@ -52,10 +52,14 @@ const Body = () => {
         <div className='avatar-container'>
           <img src={Avatar} width="88" alt="" />
         </div>
+        <div className="flex-grid-header">
+        <div className="title-container">
         <div className='title'>
           <h1>r/data</h1>
         </div>
         <p>Welcome to the Protegrity page that features a collection of posts from r/data, a subreddit dedicated to discussing and sharing data and datasets.</p>
+        </div>
+        </div>
       </div>
       {isLoading ? (
         <div>
@@ -74,6 +78,7 @@ const Body = () => {
                 </div>
                 <div className="row-bottom">
                   <p>{post.num_comments} Comments</p>
+                  <a href={post.url}><button className="global-button"><h4>View Post</h4></button></a>
                 </div>
               </div>
             ))}
@@ -81,11 +86,16 @@ const Body = () => {
         </div>
       )}
 
+<div>
+
+      <div className="flex-grid-bottom">
       <div className="button-container">
         <button className="global-button" onClick={handlePrevClick}><h4>Prev</h4></button>
         <h4>{currentPage}-12 of {Math.min(currentPage+11, 8)}</h4>
         <button className="global-button" onClick={handleNextClick}><h4>Next</h4></button>
       </div>
+      </div>
+</div>
     </>
   );
 };
