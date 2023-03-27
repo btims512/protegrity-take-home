@@ -86,6 +86,10 @@ a:hover {
     font-weight: 500;
   }
 
+  .grid-container-mobile {
+    display: none;
+  }
+
   .container {
     display: flex;
     justify-content: center;

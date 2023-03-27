@@ -37,6 +37,9 @@ const Body = () => {
   const handlePrevClick = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      if (window.innerWidth <= 767) {
+        window.scrollTo(0, 0);
+      }
     }
   };
 
@@ -63,6 +66,32 @@ const Body = () => {
       </div>
     ) : (
       <div className="flex-grid">
+        <div className="flex-container">
+          <div className="grid-container-mobile">
+            {isLoading ? (
+              <div>
+                <div className="loading">
+                  <img src={Spinner} alt="loading..." />
+                </div>
+              </div>
+            ) : (
+              posts.map((post, index) => (
+                <div className="card-container" key={index}>
+                  <div className="card">
+                    <div>
+                      <div className="middle-row"><p>u/{post.author}</p></div>
+                      <div className="top-row"><h3>{(post.title)}</h3></div>
+                    </div>
+                    <div className="bottom-row">
+                      <p>{post.num_comments} Comments</p>
+                      <a href={post.url}><button className="global-button"><h4>View Post</h4></button></a>
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
         <div className="grid-container">
           {posts.map((post, index) => (
             <div className="grid-item" key={index}>
@@ -93,7 +122,9 @@ const Body = () => {
       </div>
     </div>
   </>
-  );
+);
 };
 
 export default Body;
+
+
