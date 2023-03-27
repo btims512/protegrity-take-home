@@ -4,21 +4,18 @@ This is a React web application that displays a collection of posts from the r/d
 
 
 ### Installation
-
 Clone the repository: git clone https://github.com/your-username/r-data-page.git
 Install dependencies: npm install
 Run the app: npm start
 
 
 ### Usage
-
 The application will be running on http://localhost:3000 in your browser.
 
 Use the "Prev" and "Next" buttons to navigate through the pages of posts. The page number and total number of pages are displayed in the center of the bottom section of the page.
 
 
 ### Dependencies
-
 This project uses:
 
 React (v17.0.2)
@@ -27,15 +24,12 @@ react-scripts (v4.0.3)
 
 
 ### Contributing
-
 If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
 
 ### License
-
 This project is licensed under the MIT License.
 
 
 ### Credits
-
 This project was created by Ben Tims. The images used in this project were obtained from Reddit, and Protegrity was the inspiration behind the project.
