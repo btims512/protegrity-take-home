@@ -1,9 +1,9 @@
 @import url("../../styles/global-styles.css");
 
 header {
-  display: flex;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   background-color: var(--header-bg);
   height: 56px;
-  justify-content: center;
-  align-items: center;
 };

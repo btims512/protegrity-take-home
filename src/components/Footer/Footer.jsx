@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../../assets/images/footer-logo.svg";
-import Twitter from "../../assets/images/twitter.svg";
-import LinkedIn from "../../assets/images/linkedin.svg";
+import Logo from "../../images/footer-logo.svg";
+import Twitter from "../../images/twitter.svg";
+import LinkedIn from "../../images/linkedin.svg";
 
 import "./Footer.css";
 
