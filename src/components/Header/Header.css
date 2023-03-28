@@ -6,4 +6,5 @@ header {
   align-items: center !important;
   background-color: var(--header-bg);
   height: 56px;
+  margin-left: -10px;
 };
