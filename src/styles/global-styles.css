@@ -46,8 +46,8 @@ h3 {
 
 h4 {
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 23px;
   color: #2B3037;
   margin: 0;
@@ -56,9 +56,16 @@ h4 {
 p {
   font-size: 16px;
   line-height: 21px;
-  font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+.row-top p {
+  color: var(--username-text);
+}
+
+.row-bottom p {
+  color: var(--foreground-alt);
 }
 
 a {
@@ -74,19 +81,38 @@ a:hover {
 .global-button {
   border: 1px solid;
   border-radius: 100px;
-  padding: 10px 24px 10px 24px;
+  padding: 10px 22px;
   background-color: transparent;
   border-color: var(--foreground-alt2);
 }
 
 .global-button:hover {
   cursor: pointer;
+  border: 1px solid;
+  border-color: var(--primary-brand);
+}
+
+.global-button:hover {
+  cursor: pointer;
+  border: 1px solid;
+  border-color: var(--primary-brand);
 }
 
 @media (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
   h3 {
     font-size: 16px;
     font-weight: 500;
+  }
+
+  p {
+    font-size: 14px;
   }
 
   .grid-container-mobile {
@@ -99,6 +125,11 @@ a:hover {
     flex-direction: column;
     align-content: center;
   }
+
+  .alignment {
+    display: flex;
+    flex-direction: column;
+}
 
   .global-button {
     padding: 8px;
@@ -156,7 +187,7 @@ a:hover {
 
   h4 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
@@ -181,4 +212,24 @@ a:hover {
   a:hover {
     text-decoration: underline;
   }
+}
+
+/* Small screens (up to 767px) */
+
+/* Medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+/* Large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra-large screens (1200px and up) */
+@media (min-width: 1200px) {
+
 }

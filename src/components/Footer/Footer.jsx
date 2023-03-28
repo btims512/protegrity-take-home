@@ -14,15 +14,25 @@ const Footer = () => {
             <img
               src={Logo}
               style={{ marginBottom: "20px" }}
-              alt="Protegrity company logo"
+              alt="Protegrity logo"
+              aria-label="Protegrity website"
             />
           </a>
           <div className="footer-icons">
             <a href="https://twitter.com/protegrity">
-              <img src={Twitter} style={{ width: "26px" }} alt="Twitter icon" />
+              <img
+                src={Twitter}
+                style={{ width: "26px" }}
+                alt="Protegrity Twitter"
+                aria-label="Protegrity Twitter link"
+              />
             </a>
             <a href="https://www.linkedin.com/company/protegrity/">
-              <img src={LinkedIn} alt="LinkedIn icon" />
+              <img
+                src={LinkedIn}
+                alt="Protegrity LinkedIn"
+                aria-label="Protegrity LinkedIn link"
+              />
             </a>
           </div>
         </div>

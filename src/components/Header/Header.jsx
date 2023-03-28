@@ -7,7 +7,12 @@ const Header = () => {
   return (
     <header>
       <a href="/">
-        <img src={Logo} width="150px" style={{ marginTop: "5px" }} alt="" />
+        <img
+          src={Logo}
+          width="150px"
+          style={{ marginTop: "5px" }}
+          alt="Protegrity company logo"
+        />
       </a>
     </header>
   );
